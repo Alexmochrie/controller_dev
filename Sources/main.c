@@ -46,13 +46,13 @@ void main (void)
     init_TIMER();
     init_UART();
     init_ADC();
-    init_LCD();
+    //init_LCD();
 
-    //Turn off buzzer
-//    GPIO_setAsInputPin(
-//           GPIO_PORT_P1,
-//           GPIO_PIN7
-//       );
+    //]Turn off buzzer
+    GPIO_setAsInputPin(
+           GPIO_PORT_P1,
+           GPIO_PIN7
+       );
 
     //Enable interrupts before main loop
     __enable_interrupt();
